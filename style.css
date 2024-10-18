@@ -76,11 +76,11 @@ main{
     color: var(--secondary-color);
 }
 .container h2{
-    font-size: 4vw;
+    font-size: 64px;
 
 }
 .container p{
-    font-size: 1.5vw;
+    font-size: 20px;
     width: 40vw;
 }
 .action{
@@ -113,4 +113,63 @@ footer{
     top: 50%;
     transform: translate(-50%, -50%);
     height: 65vh; 
+}
+
+/* TABLET */
+@media (max-width:960px) {
+    body{
+        padding-inline: 32px;
+        padding-bottom: 32px;
+    }
+    main{
+        justify-content: space-between;
+    }
+    footer{
+        display: none;
+    }
+    .pikachu-image{
+        height: 50vh;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center ;
+        gap: 16px;
+    }
+    .container div{
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 16px;
+    }
+    .container div p{
+        width: 100%;
+    }
+    .action{
+        align-items: center;
+        justify-content: center;
+    };
+}
+
+@media (max-width:640px) {
+    header div{
+        display: none;
+    }
+    .title span{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .container div{
+        width: 100%;
+    }
+    .container p{
+        display: none;
+    }
+    .container h2{
+        font-size: 36px;
+    }
+    .action a{
+        width: 100%;
+    }
 }
