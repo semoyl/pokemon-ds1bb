@@ -152,9 +152,10 @@ footer{
     };
 }
 
+    /* CELULAR */
 @media (max-width:640px) {
     header div{
-        display: none;
+        display: none; 
     }
     .title span{
         left: 50%;
